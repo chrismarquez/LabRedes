@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Create Form</title>
 	<script src = 'https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -50,11 +51,21 @@
 						<input type = "number" id = "itemNumber" value = "0">
 					</div>
 					<div class = "medium-offset-1 medium-4 columns">
+						<br>
 						<button type = "button" id = "submitItem" class = "alert button">Add</button>
 					</div>
 				</div>
 				<div class = "row">
-					<p id = "addedItems"></p>
+					<div class = "medium-12 columns">
+						<p id = "addedItems"></p>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "medium-12 columns">
+						<label>Type the name and id of additional students using the lab:</label>
+						<textarea placeholder = "Ex: Name Middle_Name Last_Name A0XXXXXXX" id = "students">
+						</textarea>
+					</div>
 				</div>
 				<button id = "submit" type = "button" class = "success button">Submit</button>
 			</form>
